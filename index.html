@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //selection
+//no 1
+    let x = 5;
+    let y = 10;
+    let z = 9;
+
+    if (x>y && x>z) {
+        console.log('x lebih besar');
+    }
+    else if (y>x && y>z) {
+        console.log('y lebih besar');
+    }
+    else if(z>x && z>y){
+        console.log('z lebih besar');
+    }
+
+//no 2
+    let no = 25;
+
+    if (no % 2 == 0) {
+        console.log("bilangan genap " + " dan" +" positif");
+    }else {
+        console.log("bilangan ganjil " + " dan" +" negatif");
+    }
+
+
+
+//no 3
+     // Mendapatkan input dari pengguna
+let lamp = prompt('masukkan angka 0 dan 1');
+
+if (lamp == 1) {
+    lampu = 'lampu nyala';
+}
+    else if (lamp == 0) {
+        lampu = 'lampu mati';
+    }
+    else{
+         alert("masukkan angka 1 dan 0 !!!!");
+    }
+    console.log(lampu);
+
+//no 4
+    let barang1 =20000 ;
+    let barang2 =80000 ;
+    let barang3 = 10000;
+
+    let jumLah = barang1 + barang2 + barang3;
+
+    if (jumLah >= 100000){
+        diskon = jumLah * (10/100); 
+        total = jumLah - diskon;
+    }else{
+        total = jumLah;
+    }
+
+    console.log(`harga yang harus dibayar sebesar RP ${total}`)
+
+//no 5
+    let lembur = 7;
+
+    if (lembur < 6){
+        gaji = 100000;
+    }
+    else if (lembur == 6){
+        gaji = 200000;
+    }
+    else{
+        gaji = 300000;
+    }
+
+    console.log(`jika anda lembur ${lembur} jam maka akan mendapatkan gaji sebesar RP ${gaji}`)
+
+//no 6
+    let air = 700;
+
+    if(air <= 500){
+        console.log('status air aman') 
+    }else if (air >=600.0){
+        console.log('status air waspada')
+    }else if (air >= 650.0){
+        console.log('status air SIAGA 2')
+    }else if (air > 650){
+        console.log('status air SIAGA 1')
+    }
+
+//tugas khusus    
+    let vip = 50;
+        let eksekutif = 50;
+        let ekonomi = 50;
+
+        // vip
+        if (vip >= 35) {
+            untung = 25;
+        }
+        else if (vip >= 20) {
+            untung = 15;
+        }
+        else {
+            untung = 5;
+        }
+
+        // eksekutif
+        if (eksekutif >= 40) {
+            untung2 = 20;
+        }
+        else if (eksekutif >=20){
+           untung2 = 10;
+        }
+        else {
+            untung2 = 2;
+        }
+
+        // ekonomi
+        if (ekonomi > 0) {
+            untung3 = 7;
+        }
+
+        //keuntungan kelas
+        let klsvip = vip * untung;
+        let klseksekutif = eksekutif * untung2;
+        let klsekonomi = ekonomi *untung3;
+
+        //keuntungan full 
+        let keuntunganfull = klsvip + klseksekutif + klsekonomi;
+
+        // total penjualan tiket
+        let totaltiket = vip + eksekutif + ekonomi;
+
+        console.log(`
+        keuntungan kelas per kelas,
+        kelas vip keuntungannya ${klsvip}%,
+        kelas eksekutif keuntunggannya ${klseksekutif}%, 
+        kelas ekonomi keuntungannya ${klsekonomi}%.        
+        keuntungan secara keseluruhan adalah ${keuntunganfull}%.
+        jumlah tiket terjual vip=${vip}, eksekutif=${eksekutif}, ekonomi=${ekonomi}. 
+        penjualan tiket keseluruhan = ${totaltiket} tiket
+        `)
+
+        //kg ke g
+        let kg = 1;
+        let hasil = kg *1000; //kenapa dikali 1000 karena dari kg ke g turun 3 tangga, setiap tangga di kali 10 atau di bagi 10 tergantung kondisi kalo naik dibagi kalo turun dibagi
+        console.log(`hasil dari kg ke g adalah ${hasil}g`);
+
+        //km ke m
+        let km = 10;
+        let hangsil = km * 1000;
+        console.log(`hasil dari km ke m adalah ${hangsil}g`)
+
+        //menghitung jam ke menit
+        let jam = 10;
+        let menit = 60;
+        let mengnit = jam * menit; 
+        console.log(`hasil dari jam ke menit adalah ${mengnit}`);
+
+        //menghitung jam ke detik    
+        let hour  = 8;
+        let min = 60;
+        let second =  60;
+        let asik = hour * min * second;
+        console.log(`hasil dari perhitungan jam ke detik adalah ${asik} detik`)
+
+        //penjumlahan 2 angka
+        let p = 200;
+        let f = 159;
+        let hamsil = 200 + 159;
+        console.log(`ini adalah hasil dari penjumlahan 2 angka ${hamsil}`)
+    </script>
+</body>
+</html>
